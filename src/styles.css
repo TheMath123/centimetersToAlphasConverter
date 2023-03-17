@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.label {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.boxInput {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.inputNumber {
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+
+  border-radius: 2rem;
+  border: solid 1px #00951e;
+  background: #d2ffdb;
+}
+
+.inputNumber:disabled {
+  border: solid 1px #000000;
+  background: #dbdbdb;
+}
+
+.subLabel {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.buttonSubmit {
+  display: flex;
+  width: 100%;
+  border-radius: 2rem;
+  background: #00951e;
+  padding: 1rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: #ffffff;
+  transition: filter 0.3s;
+}
+
+.buttonSubmit:hover {
+  filter: brightness(0.8);
+}
+
+.buttonSubmit:disabled {
+  background: #dbdbdb;
+}
